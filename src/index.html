@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+<form action="" class="login-form-wrap hidden" id="login-form">
+    <div class="login-form">
+        <div class="login-form__row" id="fio-block">
+            <div>
+                <label for="fio" class="login-form__label">ФИО <span class="info">
+                    <span class="info__description">Служба доставки выдаст заказ по паспорту</span>
+                </span></label>
+            </div>
+            <div>
+                <input type="text" name="fio" id="fio" placeholder="Фамилия Имя Отчество" class="login-form__input">
+            </div>
+        </div>
+        <div class="login-form__row" id="email-row">
+            <div>
+                <label for="email" class="login-form__label">Email</label>
+            </div>
+            <div>
+                <input type="text" name="email" id="email" class="login-form__input login-form__input_email">
+                <div class="preloader" id="preloader"></div>
+            </div>
+        </div>
+        <div class="login-form__row" id="phone-block">
+            <div>
+                <label for="phone" class="login-form__label">Телефон</label>
+            </div>
+            <div>
+                <input type="tel" minlength="10" name="phone" id="phone" class="login-form__input">
+            </div>
+        </div>
+        <div class="login-form__row hidden" id="password-block">
+            <div>
+                <label for="password" class="login-form__label">Пароль</label>
+            </div>
+            <div>
+                <input type="text" name="password" id="password" class="login-form__input">
+            </div>
+            <div class="login-form__row">
+                <div class="login-form__password-reset" id="password-reset">Сбросить пароль</div>
+            </div>
+        </div>
+        <div class="login-form__row" id="form-button-block">
+            <button class="login-form__button" id="login-form-button">Зарегистрироваться</button>
+        </div>
+    </div>
+</form>
+<div class="greetings hidden" id="greetings"></div>
+</body>
+</html>
